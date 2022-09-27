@@ -40,7 +40,7 @@ export function Stats() {
           onClick={getTransactions}>
             Get Transactions
         </button>
-        {transactions && transactions.map(({from,hash,blockNum,to})=><div key={hash}>
+        {transactions && transactions.map(({from,hash,blockNum,to})=><div key={hash} style={{border:"1px solid black", borderRadius:"5px",margin:"5px"}}>
           <p><span style={{fontWeight:"bold"}}>Block Number:</span> {blockNum}</p>
           <p><span style={{fontWeight:"bold"}}>Hash:</span> {hash}</p>
           <p><span style={{fontWeight:"bold"}}>From:</span> {from}</p>

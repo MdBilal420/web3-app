@@ -20,7 +20,7 @@ function Home() {
   if(account) return navigate("/stats")
   return (
     <div className="App">
-      <button onClick={connectWallet}>Connect Wallet</button>
+      <button onClick={connectWallet}>Log In</button>
     </div>
   );
 }
